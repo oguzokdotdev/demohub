@@ -3,72 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>oguzok.tech</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 24px;
-    }
+  <title>Портфолио / oguzok.dev</title>
 
-    .card {
-      max-width: 700px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin: 0 0 12px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #cbd5e1;
-      margin: 0 0 24px;
-    }
-
-    .links {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    a {
-      color: #0f172a;
-      background: #f8fafc;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 12px;
-      font-weight: 600;
-    }
-
-    a.secondary {
-      background: transparent;
-      color: #f8fafc;
-      border: 1px solid #334155;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js"></script>
 </head>
-<body>
-  <div class="card">
-    <h1>oguzok.dev</h1>
-    <p>
-      Личный сайт и пространство моих проектов. Скоро здесь появится DemoHub - интерактивное портфолио.
-    </p>
+<body class="bg-soft text-ink antialiased">
+  <div class="mx-auto min-h-screen max-w-5xl px-6 py-10 md:px-10 md:py-14">
 
-    <div class="links">
-      <a class="secondary" href="https://github.com/oguzokdotdev" target="_blank">
-        Мой GitHub
-      </a>
-    </div>
+    <header class="mb-20 border-b border-line pb-10">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="mb-3 text-sm tracking-[0.2em] text-muted uppercase">Portfolio</p>
+          <h1 class="text-5xl font-semibold tracking-tight md:text-7xl">oguzokdotdev</h1>
+        </div>
+
+        <div class="max-w-sm">
+          <p class="text-lg text-muted">Алексей</p>
+          <p class="mt-2 text-base leading-relaxed text-muted">
+            Python-разработчик. Telegram-боты, Telegram Mini Apps, автоматизации.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="space-y-20">
+
+      <section id="hero" class="grid gap-8 md:grid-cols-12">
+        <div class="md:col-span-7">
+          <p class="mb-3 text-sm tracking-[0.2em] text-muted uppercase">Focus</p>
+          <h2 class="max-w-2xl text-3xl font-medium leading-tight md:text-5xl">
+            Понятная архитектура. Масштабируемость. Рабочие MVP.
+          </h2>
+        </div>
+
+        <div class="md:col-span-5 md:pt-12">
+          <div class="space-y-3 border-l border-line pl-5">
+            <p class="text-sm text-muted">Стек</p>
+            <p class="text-base">Python</p>
+            <p class="text-base">FastAPI</p>
+            <p class="text-base">Telegram Bot API</p>
+            <p class="text-base">BeautifulSoup4</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="mb-8 flex items-end justify-between gap-4 border-b border-line pb-4">
+          <h2 class="text-2xl font-semibold md:text-3xl">Проекты</h2>
+          <p class="text-sm text-muted">selected work</p>
+        </div>
+
+        <div class="space-y-4">
+          <article class="group rounded-3xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-sm md:p-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+              <div class="max-w-2xl">
+                <h3 class="text-2xl font-semibold">DemoHub</h3>
+                <p class="mt-3 text-base leading-relaxed text-muted">
+                  Интерактивное портфолио для демонстрации Telegram-ботов.
+                </p>
+              </div>
+                <div class="shrink-0 flex items-center">
+                  <a 
+                    href="https://github.com/oguzokdotdev/demohub"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium transition hover:bg-ink hover:text-white"
+                  >
+                    Узнать больше
+                  </a>
+                </div>
+            </div>
+          </article>
+
+        <div class="space-y-4">
+          <article class="group rounded-3xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-sm md:p-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+              <div class="max-w-2xl">
+                <h3 class="text-2xl font-semibold">NotNet Messenger</h3>
+                <p class="mt-3 text-base leading-relaxed text-muted">
+                  Эксперементальный проект. Оффлайн-чат, работающий в локальной сети.
+                </p>
+              </div>
+                <div class="shrink-0 flex items-center">
+                  <a 
+                    href="https://github.com/oguzokdotdev/notnet-messenger"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium transition hover:bg-ink hover:text-white"
+                  >
+                    Узнать больше
+                  </a>
+                </div>
+            </div>
+          </article>         
+
+          <article class="group rounded-3xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-sm md:p-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+              <div class="max-w-2xl">
+                <h3 class="text-2xl font-semibold">PinStatsBot</h3>
+                <p class="mt-3 text-base leading-relaxed text-muted">
+                  Парсер Pinterest для сбора статистики пинов.
+                </p>
+              </div>
+
+              <div class="shrink-0">
+                <button 
+                  onclick="openScreenshot()"
+                  class="rounded-full border border-line px-4 py-2 text-sm text-muted hover:bg-ink hover:text-white transition"
+                >
+                  Скрин
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacts" class="grid gap-8 border-t border-line pt-8 md:grid-cols-12">
+        <div class="md:col-span-4">
+          <h2 class="text-2xl font-semibold">Контакты</h2>
+        </div>
+
+        <div class="md:col-span-8">
+          <div class="space-y-3">
+            <a href="mailto:hi@oguzok.tech" class="block text-xl underline decoration-line underline-offset-4 hover:text-muted">
+              hi@oguzok.tech
+            </a>
+            <p class="text-base text-muted">
+              E-mail для связи. Ответ в течении 24-х часов.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="mt-20 border-t border-line pt-6">
+      <p class="text-sm text-muted">© 2026 Алексей О.</p>
+    </footer>
   </div>
+<div 
+  id="screenshot-modal"
+  class="hidden fixed inset-0 bg-black/70 flex items-center justify-center p-6 z-50"
+  onclick="closeScreenshot()"
+>
+
+  <img 
+    src="images/pinstats.png"
+    class="max-h-[90vh] rounded-xl shadow-2xl"
+  >
+
+</div>
 </body>
 </html>
