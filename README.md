@@ -69,5 +69,4 @@ Telegram-бот с основным функционалом проекта:
 ## 💬 Контакты
 
 - Сайт: https://www.oguzok.tech
-- Почта: hi@oguzok.tech
 - Kwork: https://kwork.ru/user/oguzokdotdev
